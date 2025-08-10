@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>DalyDY — Projects</title>
+  <meta name="description" content="Landing page for DalyDY projects on GitHub Pages. Links to the Chrome update educational demo." />
+  <link rel="canonical" href="https://dalydy.github.io/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Optional: if you want to re-use the same GSC verification tag -->
+  <!-- <meta name="google-site-verification" content="PASTE_YOUR_TAG_IF_YOU_ADD_THIS_ROOT_AS_A_PROPERTY" /> -->
+
+  <style>
+    :root { --bg:#f6f8fa; --card:#fff; --border:#d0d7de; --muted:#6e7781; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#111; }
+    header { background:#eef3ff; border-bottom:1px solid var(--border); padding:24px 20px; }
+    header h1 { margin:0 0 6px; font-size:1.6rem; }
+    header p { margin:0; color:var(--muted); }
+    main { max-width:960px; margin:28px auto; padding:0 20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; }
+    .card h2 { margin:0 0 8px; font-size:1.1rem; }
+    .card p { margin:0 0 12px; color:var(--muted); }
+    .cta { display:inline-block; padding:10px 14px; border:1px solid var(--border); border-radius:8px; text-decoration:none; color:#111; }
+    .cta:hover { border-color:#b7bfc7; }
+    footer { color:var(--muted); font-size:0.9rem; margin:28px 0; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DalyDY — Projects</h1>
+    <p>Index page to help humans (and crawlers) find my GitHub Pages projects.</p>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <h2>Chrome Update – Educational Demo</h2>
+        <p>A safe classroom demonstration showing how Google indexing works. No software provided.</p>
+        <a class="cta" href="https://dalydy.github.io/chrome-demo/">Open project</a>
+      </article>
+
+      <!-- Add more project cards here in the future -->
+    </section>
+
+    <footer>
+      © <span id="y"></span> DalyDY. This homepage exists to provide a clean linking path to projects.
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
